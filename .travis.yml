@@ -10,11 +10,12 @@ env:
   - GIT_AUTHOR_NAME=Yuichiro Someya
   - GIT_AUTHOR_EMAIL=ayemos.y@gmail.com
 before_script:
-- git clone --quiet https://github.com/ayemos/source.leather-port.git
 - git clone --quiet https://github.com/ayemos/leather-port.git build
+- pushd build
+- git checkout -b gh-pages
+- popd
 after_success:
 - cd build
 - git add -A
 - git commit -m 'Update'
-- '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/ayemos/leather-port.git
-  master'
+- '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/ayemos/leather-port.git gh-pages'
