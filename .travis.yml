@@ -1,5 +1,7 @@
 language: ruby
 script: bundle exec middleman build
+rvm:
+  - 2.4.1
 env:
   global:
   - GIT_COMMITTER_NAME=Yuichiro Someya
