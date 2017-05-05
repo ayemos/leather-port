@@ -52,5 +52,9 @@ activate :directory_indexes
 #   activate :minify_javascript
 # end
 #
+configure :build do
+  activate :relative_assets
+  set :site_url, "/leather-port"
+end
 
 set :haml, { :ugly => true, :format => :html5 }
