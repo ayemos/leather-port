@@ -1,0 +1,21 @@
+!!! 5
+%html(lang="ja")
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ja", "http-equiv" => "content-language"}/
+    %meta{:content => "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %title LEATHER PORT
+    = stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css'
+    = stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+    = stylesheet_link_tag 'application', relative: false
+    = auto_stylesheet_link_tag
+  %body
+    #nav-wrapper.is-fullwidth
+      .container
+        = partial 'layouts/navbar'
+    #wrapper
+      = yield
+    #footer
+      = partial 'layouts/footer'

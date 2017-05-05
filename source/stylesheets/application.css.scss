@@ -1,0 +1,90 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+    color: #303127;
+    background-color: #fff;
+    font-family: 'Noto Sans Japanese', serif;
+    font-weight: 100;
+}
+
+h1, h2 {
+  font-weight: 200;
+}
+
+#nav-wrapper {
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.50);
+}
+
+#wrapper {
+  padding-top: 52px;
+}
+
+a > figure {
+  -webkit-filter: brightness(100%);
+}
+
+a > figure:hover {
+  -webkit-filter: brightness(70%);
+}
+
+figcaption {
+  margin-top: 3vw;
+  width: 100%;
+  font-size: 3vw;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+a {
+  color: #202117;
+}
+
+a:hover {
+  color: #d9230f;
+}
+
+a.nav-item:hover {
+  color: #d9230f;
+}
+
+section.product {
+  figure > img {
+    -webkit-filter: brightness(70%);
+  }
+
+  figure > figcaption {
+    margin-top: 4vw;
+    line-height: 4vw;
+    font-size: 4vw;
+    color: white;
+
+    p {
+      font-size: 1.5vw;
+    }
+  }
+}
+
+section.product-detail {
+  figure > img {
+    -webkit-filter: brightness(70%);
+  }
+
+  figure > figcaption {
+    margin-top: 4vw;
+    margin-left: 4vw;
+    line-height: 4vw;
+    font-size: 4vw;
+    color: white;
+
+    p {
+      font-size: 1.5vw;
+    }
+  }
+}
+
