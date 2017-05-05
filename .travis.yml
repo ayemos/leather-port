@@ -1,7 +1,7 @@
 language: ruby
 script: bundle exec middleman build
 rvm:
-  - 2.4.1
+- 2.4.1
 cache: bundler
 env:
   global:
@@ -9,7 +9,6 @@ env:
   - GIT_COMMITTER_EMAIL=ayemos.y@gmail.com
   - GIT_AUTHOR_NAME=Yuichiro Someya
   - GIT_AUTHOR_EMAIL=ayemos.y@gmail.com
-  - secure: qF0bLKX4ZYezJEVwJQRNJUlC96mWxeHuQeC0uQSuCHkEW4Fd06LOEZLyBpQdSs+eHQUFK0BEcRF7wX3xlqQfaZlAibIF2QSA/0PZp8scKRPfK+vAErDsi/ZH+QDJYOKFF0lGGUs5qcn23W5aSgYNAst67kcZEHgHpfBxOr982LGC6CORVFcKMIUixtBPXxltFqEbjlPAtCpdiyXF1N+odqS6Jh6oTi1w/uByHLJ8ttfHvDE61fLRBz96cwMjGATvOcHh43GWEpqn/h4CjwQcY57lQEATJbO2f2l0Qc3VTL7sXIanZ/0rwqNUHo3J08hn/gA8rWpwTrToJ3yJoGRVX3+IyQbIbCNAsPg8VCtH1Tkeq+rW/BjgjyTeDBCNxilstduEd+rRaFCWuMbtVZmMPXesHpXGWWZTQZSu4NhjxzkTXSjazx6MKNHhwpIvptoyswgGvoLfIe8CxHqJdNklTEBbnsiv/jA17FdYq8vJbg8mp+JNNhsEv+NHf4Y3wNWFOsexctfct9T+U/ztaLL///go85L/U74xBB4fuAt/9ilcNOj0/fyQvex5sNgN4aapYtJkZkfer6ZlaS+0qyo3az+uDLUgVIgMMWyYFnP2vJW62UjkA+ZYKNxCz2PSc1n7QLBDllucQapCpnxR6QN9zF/dI+N9dp3lE1OyqgFQYDg=
 before_script:
 - git clone --quiet https://github.com/ayemos/source.leather-port.git
 - git clone --quiet https://github.com/ayemos/leather-port.git build
