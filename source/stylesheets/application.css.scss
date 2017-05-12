@@ -4,7 +4,7 @@ body {
     color: #303127;
     background-color: #fff;
     font-family: 'Noto Sans Japanese', serif;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 h1, h2 {
@@ -61,7 +61,7 @@ section.product {
   figure > figcaption {
     margin-top: 4vw;
     line-height: 4vw;
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: white;
 
     p {
@@ -88,3 +88,35 @@ section.product-detail {
   }
 }
 
+.column.product-spec {
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  ul {
+    margin-left: 1rem;
+    list-style-type: disc;
+
+    li {
+      line-height: 1.5rem;
+    }
+  }
+
+  p.footnote {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+  }
+
+  figure.leather-sample {
+    width: 50%;
+    float: left;
+    display: inline;
+  }
+
+  figure > figcaption {
+    margin-top: 1rem;
+    line-height: 2vw;
+    font-size: 1.5vw;
+    color: white;
+  }
+}
