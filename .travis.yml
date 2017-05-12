@@ -22,4 +22,4 @@ after_success:
   - echo 'www.leather-port.com' > CNAME
   - git add -A
   - git commit -m 'Update'
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/ayemos/leather-port.git gh-pages'
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/ayemos/leather-port.git gh-pages --force'
