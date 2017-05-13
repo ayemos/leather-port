@@ -12,7 +12,7 @@ title: LEATHER PORT
           レザー好きの皆様とを繋ぐ港です。
           <br />
           小さな、あるいは大きなロマンを探す旅に、ちょっと出かけてみませんか？
-%section.section
+%section.section.product
   .container
     .columns.is-mobile.is-multiline
       .column.is-two-thirds-tablet.is-full-mobile
@@ -31,24 +31,31 @@ title: LEATHER PORT
           <br />
           皆さんは、そんなことを想像してみたことはありませんか？
       .column.is-one-quarter-tablet.is-half-mobile
-        = image_tag('S__41631763.jpg', width: '100%')
+        = link_to '/products#iron-boots' do
+          %figure.image.has-text-centered
+            = image_tag('5515_1.jpg', width: '100%')
+            %figcaption
+              %h2
+                Iron Boots
       .column.is-one-quarter-tablet.is-half-mobile
-        = image_tag('S__41631764.jpg', width: '100%')
+        = link_to '/products#own-belt' do
+          %figure.image.has-text-centered
+            = image_tag('own_belt_1.jpg', width: '100%')
+            %figcaption
+              %h2
+                OWN Belt
     .columns.is-mobile.is-multiline
       .column.is-one-quarter-tablet.is-half-mobile
-        = image_tag('S__41631772.jpg', width: '100%')
-      .column.is-one-quarter-tablet.is-half-mobile
-        = image_tag('S__41631771.jpg', width: '100%')
+        = link_to '/products#cleaf' do
+          %figure.image.has-text-centered
+            = image_tag('cleaf_1.jpg', width: '100%')
+            %figcaption
+              %h2
+                C'leaf
+
       .column.is-half-tablet.is-full-mobile
         %p
           LEATHER PORTは、確かな腕を持つレザー職人たちに直接働きかけ、
           我々自身がPort（港）となることで、
 
           世界中に眠る心くすぐるレザー製品と、日本の皆様とを結ぶ役割を果たしていきます。
-%section#top-bottom-hero.hero
-  .title
-    = link_to '/products' do
-      %figure.image.has-text-centered
-        = image_tag('DSC_0449.jpg', width: '100%')
-        %figcaption
-          取り扱い商品

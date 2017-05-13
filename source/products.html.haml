@@ -1,4 +1,4 @@
-%section.hero
+%section.hero#ironboots
   .container
     .hero-body
       .title
@@ -57,3 +57,24 @@
             = image_tag('policeman_1.jpg', width: '100%')
             %figcaption
               Policeman
+%section.hero
+  .container
+    .hero-body
+      .title
+        その他
+%section.hero.product
+  .columns.is-multiline.is-mobile.is-gapless
+    .column.is-half-mobile.is-one-third-tablet#own-belt
+      .title
+        = link_to '/products/own_belt' do
+          %figure.image.has-text-centered
+            = image_tag('own_belt_1.jpg')
+            %figcaption
+              OWN Belt
+    .column.is-half-mobile.is-one-third-tablet#cleaf
+      .title
+        = link_to '/products/cleaf' do
+          %figure.image.has-text-centered
+            = image_tag('cleaf_1.jpg', width: '100%')
+            %figcaption
+              C'leaf
