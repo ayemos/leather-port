@@ -1,6 +1,11 @@
 #top-hero {
-  background-image: url('/images/076_2048.png');
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url('/images/top_banner.jpg');
   background-size: cover;
+  background-position: right top;
 }
 
 #top-bottom-hero {
@@ -11,13 +16,13 @@
 
 
 #top-caption{
-  margin-top: 130px;
-  margin-bottom: 130px;
+  margin-top: 12vw;
+  margin-bottom: 12vw;
 
   h2{
     font-weight: 100;
     font-size: 14px;
-    color: #272411;
+    color: white;
     letter-spacing: 1.99px;
     line-height: 32px;
   }
