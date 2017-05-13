@@ -10,6 +10,7 @@
     = stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css'
     = stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
     = stylesheet_link_tag 'application', relative: true
+    %script{type: 'text/javascript'}
     = auto_stylesheet_link_tag
     = favicon_tag 'images/favicon.ico'
   %body
@@ -20,3 +21,14 @@
       = yield
     #footer
       = partial 'layouts/footer'
+  :javascript
+    document.getElementById("nav-toggle").addEventListener ("click", toggleNav);
+    function toggleNav() {
+            var nav = document.getElementById("nav-menu");
+            var className = nav.getAttribute("class");
+            if(className == "nav-right nav-menu") {
+                nav.className = "nav-right nav-menu is-active";
+            } else {
+                nav.className = "nav-right nav-menu";
+            }
+    }
