@@ -106,7 +106,7 @@
             = link_to '問い合わせ', '#inquiry', style: 'text-decoration: underline;'
           <hr />
           %h2
-            完全オーダーメイド制(下記をご指定頂けます):
+            オーダーメイド制(下記をご指定頂けます):
           .columns.is-multiline.is-mobile
             .column.is-half
               %figure.image
@@ -116,68 +116,126 @@
                 = image_tag('cleaf_7.jpg', width: '100%')
           %ol
             %li
-              全長:革本体（＝バックルを含まない）の端から端(cm)
+              バックルのピン先端から“ジャスト止め穴”までの長さ／(cm）
             %li
-              “ジャスト止め穴”までの長さ(cm)
+              全長（＝バックルのピン先端から、剣先までの長さ。①+18cm推奨）／（cm）
+              %p.footnote
+                ※全長を【①（バックルのピン先端から“ジャスト止め穴”までの長さ）＋18cm】で作ると、C&#39;leaf職人の
+                経験上、より実用的で美しいベルトに仕上がります。もしお客様の側で全長に絶対的な拘りが無い場合、
+                ぜひ【①+18cm】の推奨サイズに設定される事をおすすめ致します。
+            %li
+              ベルト幅（38mmもしくは32mm）
             %li
               止め穴総数（3つor4つ）
               %p.footnote
                 ※C'leaf職人の考えでは、長さを指定したオーダーメイドベルトである以上、【止め穴3つ】が最も完成されたオーダーメイドベルトです。体重変動が大きくどうしても不安な方には、保険をける意味も込めて、止め穴総数4つでも可、という具合です。
             %li
               剣先のパターン(V字型、ブレード型、台形型)
-            %li
-              バックルの種類（真鍮製をおすすめしております。※お選び頂ける真鍮製のバックルの一例を掲載致しますが、在庫状況に応じて随時変動の可能性がございます。詳しくは、オーダー時にお問い合わせ下さいませ）
-              .columns.is-multiline.is-mobile.is-gapless
-                .column.is-one-quarter
-                  %figure.image.has-text-centered.is-1by1
-                    = image_tag('cleaf_buckle_1.jpg', width: '100%')
-                    %figcaption
-                      %p
-                        A
-                .column.is-one-quarter
-                  %figure.image.has-text-centered.is-1by1
-                    = image_tag('cleaf_buckle_2.jpg', width: '100%')
-                    %figcaption
-                      %p
-                        B
-                .column.is-one-quarter
-                  %figure.image.has-text-centered.is-1by1
-                    = image_tag('cleaf_buckle_3.jpg', width: '100%')
-                    %figcaption
-                      %p
-                        C
-                .column.is-one-quarter
-                  %figure.image.has-text-centered.is-1by1
-                    = image_tag('cleaf_buckle_4.jpg', width: '100%')
-                    %figcaption
-                      %p
-                        D
-                .column.is-one-quarter
-                  %figure.image.has-text-centered.is-1by1
-                    = image_tag('cleaf_buckle_5.jpg', width: '100%')
-                    %figcaption
-                      %p
-                        E
-                .column.is-one-quarter
-                  %figure.image.has-text-centered.is-1by1
-                    = image_tag('cleaf_buckle_6.jpg', width: '100%')
-                    %figcaption
-                      %p
-                        F
-                .column.is-one-quarter
-                  %figure.image.has-text-centered.is-1by1
-                    = image_tag('cleaf_buckle_7.jpg', width: '100%')
-                    %figcaption
-                      %p
-                        G
-                .column.is-one-quarter
-                  %figure.image.has-text-centered.is-1by1
-                    = image_tag('cleaf_buckle_8.jpg', width: '100%')
-                    %figcaption
-                      %p
-                        H
+              %figure.image.has-text-centered
+                = image_tag('cleaf_11.jpg', width: '100%')
             %li
               コバ処理の有無（“有”の場合、宝石のような光沢と質感の超絶コバ処理になります）
+            %li
+              バックルの種類（真鍮製をおすすめしております。※お選び頂ける真鍮製のバックルの一例を掲載致しますが、在庫状況に応じて随時変動の可能性がございます。詳しくは、オーダー時にお問い合わせ下さいませ）
+              .columns.is-multiline.is-mobile
+                .column.is-half
+                  .columns.is-multiline.is-mobile.is-gapless
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('A1.jpg', width: '100%')
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('A2.jpg', width: '100%')
+                        %figcaption
+                          %p
+                            A（真鍮／ベルト幅38mm用）
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('A3.jpg', width: '100%')
+                .column.is-half
+                  .columns.is-multiline.is-mobile.is-gapless
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('B1.jpg', width: '100%')
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('B2.jpg', width: '100%')
+                        %figcaption
+                          %p
+                            B（真鍮／ベルト幅38mm用）
+                    .column.is-one-third
+                      %figure.image.has-text-centere.is-1by1d
+                        = image_tag('B3.jpg', width: '100%')
+                .column.is-half
+                  .columns.is-multiline.is-mobile.is-gapless
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('C1.jpg', width: '100%')
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('C2.jpg', width: '100%')
+                        %figcaption
+                          %p
+                            C（真鍮／ベルト幅38mm用）
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('C3.jpg', width: '100%')
+                .column.is-half
+                  .columns.is-multiline.is-mobile.is-gapless
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('D1.jpg', width: '100%')
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('D2.jpg', width: '100%')
+                        %figcaption
+                          %p
+                            D（真鍮／ベルト幅38mm用）
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('D3.jpg', width: '100%')
+                .column.is-half
+                  .columns.is-multiline.is-mobile.is-gapless
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('E1.jpg', width: '100%')
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('E2.jpg', width: '100%')
+                        %figcaption
+                          %p
+                            E（ニッケル合金／ベルト幅38mm用）
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('E3.jpg', width: '100%')
+                .column.is-half
+                  .columns.is-multiline.is-mobile.is-gapless
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('F1.jpg', width: '100%')
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('F2.jpg', width: '100%')
+                        %figcaption
+                          %p
+                            F（亜鉛合金＋ニッケルメッキ／ベルト幅32mm用）
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('F3.jpg', width: '100%')
+                .column.is-half
+                  .columns.is-multiline.is-mobile.is-gapless
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('G1.jpg', width: '100%')
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('G2.jpg', width: '100%')
+                        %figcaption
+                          %p
+                            G（真鍮＋ニッケルメッキ／ベルト幅32mm用）
+                    .column.is-one-third
+                      %figure.image.has-text-centered.is-1by1
+                        = image_tag('G3.jpg', width: '100%')
           <hr />
           %h2
             製作期間
